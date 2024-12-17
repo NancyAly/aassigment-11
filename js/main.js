@@ -9,7 +9,7 @@ searchInput.addEventListener("input", function () {
 
 days("alexandria");
 async function days(country) {
-    let response = await fetch(` http://api.weatherapi.com/v1/forecast.json?key=3577f5fa0194483fbe0201550241312&q=${country}&days=3`);
+    let response = await fetch(` httpS://api.weatherapi.com/v1/forecast.json?key=3577f5fa0194483fbe0201550241312&q=${country}&days=3`);
     if (response.ok) {
         let data = await response.json();
         console.log("days", data);
